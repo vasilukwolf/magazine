@@ -32,3 +32,8 @@ if(confirm('Delete?'))
 $(document).on('click','.add_parameter',function(){
 $('#myModal').modal();
 });
+
+$('.save_and_close').click(function(){
+$('select').append($('<option>', {value:1, text:$('.paramenter_modal').val()}));
+$('#myModal').modal('hide');
+});
