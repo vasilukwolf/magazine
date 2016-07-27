@@ -15,5 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('get_parameters','ParametersController@get');
+
 Route::get('additem','ItemsController@add');
 Route::post('additem','ItemController@save');
+
+
