@@ -19,3 +19,16 @@ $(document).ready(function(){
    });
   });
 });
+
+$(document).on('click','.remove_button',function(){
+var block;
+if(confirm('Delete?'))
+{
+     block=$(this).parent().parent().parent();
+     block.remove();
+}
+});
+
+$(document).on('click','.add_parameter',function(){
+$('#myModal').modal();
+});

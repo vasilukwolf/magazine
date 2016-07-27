@@ -3,7 +3,10 @@
 <label for="parameter" class="sr-only">Параметр</label>
 <div class="input-group">
 <span class="input-group-btn">
-<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+<button class="btn btn-default add_parameter" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+</span>
+<span class="input-group-btn">
+<button class="btn btn-default remove_button" type="button"><i class="glyphicon glyphicon-minus"></i></button>
 </span>
 <select class="form-control" name="parameter">
 <option value=1>Параметр 1</option>
