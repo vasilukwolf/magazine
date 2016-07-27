@@ -14,15 +14,8 @@ $(document).ready(function(){
 },
       error: function(msg){
           console.log(msg);
+          console.log("ups");
         }
    });
-});
-
-$(document).on('click','.remove_button',function(){
-var block;
-if(confirm('Delete?'))
-{
-     block=$(this).parent().parent().parent();
-     block.remove();
-}
+  });
 });

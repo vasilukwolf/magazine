@@ -9,8 +9,7 @@ use App\Http\Controllers\Controller;
 
 class ParametersController extends Controller
 {
-    public function get()
-		{
-		return view('parameters');
-		}
+    public function get(){
+    	return view('parameters');
+    }
 }

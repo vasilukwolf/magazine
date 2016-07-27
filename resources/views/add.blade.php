@@ -2,17 +2,14 @@
 <html>
 <head>
 <title>Добавить товар</title>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
 <link rel="stylesheet" href="{{asset("css/bootstrap.min.css")}}"/>
-<link rel="stylesheet" href="{{asset("css/bootstrap-theme.min.css")}}"/>
-<script src="{{asset("js/jquery-2.1.4.js")}}"></script>
-<script src="{{asset("js/functions.js")}}"></script>
-<meta name="csrf-token" id="csrf-token" content="{{ csrf_token() }}">
+<meta name="csrf-token" id="csrf-token" content="{{csrf_token()}}">
 </head>
 <body>
 <div class="container">
 <h1>Добавить товар</h1>
 <hr>
+
 <div class="row">
 <div class="col-md-4">
 <input type="file" name="preview"/><br>
@@ -32,38 +29,31 @@
 </div>
 </div>
 <h2>Параметры товара</h2>
-<hr>
 <button class="btn btn-primary btn-lg add_button" type="button">Добавить</button>
+<hr>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="myModalLabel">Добавить параметр</h4>
 </div>
-<div class="row" style="margin-left:50px;margin-top:50px;">
-<div class="col-md-12">
-<div class="form-inline" role="form">
-<div class="form-group">
-<label for="parameter" class="sr-only">Параметр</label>
-<div class="input-group">
-<span class="input-group-btn">
-<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-plus"></i></button>
-</span>
-<span class="input-group-btn">
-<button class="btn btn-default remove_button" type="button"><i class="glyphicon glyphicon-minus"></i></button>
-</span>
-<select class="form-control" name="parameter">
-<option value=1>Параметр 1</option>
-<option value=2>Параметр 2</option>
-<option value=3>Параметр 3</option>
-</select>
+<div class="modal-body">
+<input type="text" class="form-control paramenter_modal" name="parameter" placeholder="Наименование параметра"/><br>
+<input type="text" class="form-control unit_modal" name="unit" placeholder="Единица измерения"/>
 </div>
-<div class="form-group">
-<label for="value" class="sr-only">Значение параметра</label>
-<input class="form-control" name="value" placeholder="Значение параметра"/>
-</div>
-<div class="form-group">
-<label for="value" class="sr-only">Единица измерения</label>
-<input class="form-control" name="unit" placeholder="Единица измерения"/>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+<button type="button" class="btn btn-primary save_and_close">Сохранить изменения</button>
 </div>
 </div>
 </div>
 </div>
+<!-- End Modal -->
 </body>
+<script src="{{asset('js/jquery-2.1.4.js')}}"></script>
+<script src="{{asset('js/functions.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
 </html>
