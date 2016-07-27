@@ -4,6 +4,9 @@
 <title>Добавить товар</title>
 <link rel="stylesheet" href="{{asset("css/bootstrap.min.css")}}"/>
 <meta name="csrf-token" id="csrf-token" content="{{csrf_token()}}">
+<script src="{{asset('js/jquery-2.1.4.js')}}"></script>
+<script src="{{asset('js/functions.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body>
 <div class="container">
@@ -53,7 +56,4 @@
 </div>
 <!-- End Modal -->
 </body>
-<script src="{{asset('js/jquery-2.1.4.js')}}"></script>
-<script src="{{asset('js/functions.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
 </html>

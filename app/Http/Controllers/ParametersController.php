@@ -10,6 +10,13 @@ use App\Http\Controllers\Controller;
 class ParametersController extends Controller
 {
     public function get(){
-    	return view('parameters');
+    	$parameters=Parameters::all();
+		return view('parameters',['parameters'=>$parameters]);
     }
+	public function save(Request $request)
+	{
+
+		$param=Parameters::create($request->all());
+		return [$param->id,$param->title];
+}
 }
