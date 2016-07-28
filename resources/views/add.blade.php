@@ -4,9 +4,6 @@
 <title>Добавить товар</title>
 <link rel="stylesheet" href="{{asset("css/bootstrap.min.css")}}"/>
 <meta name="csrf-token" id="csrf-token" content="{{csrf_token()}}">
-<script src="{{asset('js/jquery-2.1.4.js')}}"></script>
-<script src="{{asset('js/functions.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body>
 <div class="container">
@@ -32,6 +29,7 @@
 </div>
 </div>
 <h2>Параметры товара</h2>
+<button class="btn btn-default btn-lg" type="submit">Сохранить товар</button>
 <button class="btn btn-primary btn-lg add_button" type="button">Добавить</button>
 <hr>
 </div>
@@ -55,5 +53,8 @@
 </div>
 </div>
 <!-- End Modal -->
+<script src="{{asset('js/jquery-2.1.4.js')}}"></script>
+<script src="{{asset('js/functions.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
 </body>
 </html>

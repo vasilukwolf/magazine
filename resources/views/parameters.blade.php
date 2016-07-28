@@ -1,9 +1,12 @@
-<div class="form-inline borderes" role="form">
+<div class="form-inline" role="form">
 <div class="form-group">
 <label for="parameter" class="sr-only">Параметр</label>
 <div class="input-group">
 <span class="input-group-btn">
-<button class="btn btn-default  add_parameter" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+<button class="btn btn-default add_parameter" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+</span>
+<span class="input-group-btn">
+<button class="btn btn-default remove_button" type="button"><i class="glyphicon glyphicon-minus"></i></button>
 </span>
 <select class="form-control" name="parameter">
 @foreach($parameters as $parameter)
@@ -16,8 +19,7 @@
 <input class="form-control" name="value" placeholder="Значение параметра"/>
 </div>
 <div class="form-group">
-<span class="input-group-btn">
-<button class="btn btn-default remove_button"><i class="glyphicon glyphicon-minus"></i></button>
-</span>
+<label for="value" class="sr-only">Единица измерения</label>
+<input class="form-control" name="unit" placeholder="Единица измерения"/>
 </div>
 </div>
