@@ -8,11 +8,18 @@
 <body>
 <div class="container">
 <h1>Добавить товар</h1>
+<form method="get">
 <hr>
-
 <div class="row">
 <div class="col-md-4">
-<input type="file" name="preview"/><br>
+<hr>
+<h3>Дополнительные изображения</h3>
+<button class="add_images btn btn-primary" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+<div class = "containermultiimage">
+
+</div>
+<hr>
+<input type="file" name="preview" class="multiimage"/><br>
 </div>
 <div class="col-md-8">
 <i class="glyphicon glyphicon-arrow-left"></i> Выберите миниатюру для товара. <p class="help-block">Размер изображения 150x150px, не более 200Кб</p>
@@ -31,6 +38,7 @@
 <h2>Параметры товара</h2>
 <button class="btn btn-default btn-lg" type="submit">Сохранить товар</button>
 <button class="btn btn-primary btn-lg add_button" type="button">Добавить</button>
+</form>
 <hr>
 </div>
 <!-- Modal -->

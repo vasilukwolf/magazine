@@ -1,1 +1,0 @@
-<button class="btn btn-default add_parameter" type="button"><i class="glyphicon glyphicon-plus"></i></button>

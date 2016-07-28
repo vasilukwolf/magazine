@@ -8,7 +8,7 @@
 <span class="input-group-btn">
 <button class="btn btn-default remove_button" type="button"><i class="glyphicon glyphicon-minus"></i></button>
 </span>
-<select class="form-control" name="parameter">
+<select class="form-control" name="parameter[]">
 @foreach($parameters as $parameter)
 <option value="{{$parameter->id}}">{{$parameter->title}} ({{$parameter->unit}})</option>
 @endforeach
@@ -16,7 +16,7 @@
 </div>
 <div class="form-group">
 <label for="value" class="sr-only">Значение параметра</label>
-<input class="form-control" name="value" placeholder="Значение параметра"/>
+<input class="form-control" name="value[]" placeholder="Значение параметра"/>
 </div>
 <div class="form-group">
 <label for="value" class="sr-only">Единица измерения</label>

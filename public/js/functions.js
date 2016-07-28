@@ -51,11 +51,16 @@ $.ajax({
               },
      success: function(param)
      {
-     $('select').append($('<option>', {value:param[0], text: param[1]+' ('+param[2]+')'}));//добавляем к существующему списку новый параметр
+     $('select').append($('<option>', {value:param[0], text: param[1]+' ('+param[2]+')'}));
      $('#myModal').modal('hide');
-     },
+   },
      error: function(msg){
           console.log(msg);
      }
   });
 });
+
+$('.add_images').click(function()
+{
+  $(".multiimage").first().clone().appendTo(".containermultiimage");
+})
