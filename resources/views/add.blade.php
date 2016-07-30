@@ -6,9 +6,9 @@
 <meta name="csrf-token" id="csrf-token" content="{{csrf_token()}}">
 </head>
 <body>
+<form>
 <div class="container">
 <h1>Добавить товар</h1>
-<form method="get">
 <hr>
 <div class="row">
 <div class="col-md-4">
@@ -38,7 +38,6 @@
 <h2>Параметры товара</h2>
 <button class="btn btn-default btn-lg" type="submit">Сохранить товар</button>
 <button class="btn btn-primary btn-lg add_button" type="button">Добавить</button>
-</form>
 <hr>
 </div>
 <!-- Modal -->
@@ -60,6 +59,7 @@
 </div>
 </div>
 </div>
+</form>
 <!-- End Modal -->
 <script src="{{asset('js/jquery-2.1.4.js')}}"></script>
 <script src="{{asset('js/functions.js')}}"></script>
