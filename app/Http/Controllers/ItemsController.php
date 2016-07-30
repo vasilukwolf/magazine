@@ -22,7 +22,7 @@ $root=$_SERVER['DOCUMENT_ROOT']."/images/"; //определяем папку д
 
 //Сохраняем картинки
 $url_img=array(); // массив, который будет содержать ссылки на все картинки
-foreach($request->file('preview') as $key) //обрабатываем массив с файлами
+foreach($request->file('preview') as $file) //обрабатываем массив с файлами
 {
      if(empty($file)) continue; // если <input type="file"... есть, но туда ничего не загруженно, то пропускаем
      $f_name=$file->getClientOriginalName(); //получаем имя файла

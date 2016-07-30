@@ -6,7 +6,6 @@
 <meta name="csrf-token" id="csrf-token" content="{{csrf_token()}}">
 </head>
 <body>
-<?php echo $_SERVER['DOCUMENT_ROOT'] ?>
 <form>
 <div class="container">
 <h1>Добавить товар</h1>
@@ -20,7 +19,7 @@
 
 </div>
 <hr>
-<input type="file" name="preview" class="multiimage"/><br>
+<input type="file" name="preview[]" class="multiimage"/><br>
 </div>
 <div class="col-md-8">
 <i class="glyphicon glyphicon-arrow-left"></i> Выберите миниатюру для товара. <p class="help-block">Размер изображения 150x150px, не более 200Кб</p>
