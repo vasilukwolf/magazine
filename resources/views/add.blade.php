@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-{{Form::open(array('url' => 'additem')) }}
+{!!Form::open(array('url' => 'additem')) !!}
 <h1>Добавить товар</h1>
 <hr>
 <div class="row">
@@ -30,7 +30,7 @@
 <label class="control-label" for="name">Название товара</label>
 <input class="form-control" type="text" name="title"/>
 <label for="description" class="control-label">Описание товара</label>
-<textarea class="form-control" rows="4"></textarea>
+<textarea class="form-control" rows="4" name="description"></textarea>
 <label class="control-label" for="price">Цена</label>
 <input class="form-control" type="text" name="price"/>
 </div>
@@ -59,7 +59,7 @@
 </div>
 </div>
 </div>
-{{ Form::close() }}
+{!! Form::close() !!}
 <!-- End Modal -->
 <script src="{{asset('js/jquery-2.1.4.js')}}"></script>
 <script src="{{asset('js/functions.js')}}"></script>
