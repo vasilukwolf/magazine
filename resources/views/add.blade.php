@@ -6,8 +6,8 @@
 <meta name="csrf-token" id="csrf-token" content="{{csrf_token()}}">
 </head>
 <body>
-<form>
 <div class="container">
+{{Form::open(array('url' => 'additem')) }}
 <h1>Добавить товар</h1>
 <hr>
 <div class="row">
@@ -59,7 +59,7 @@
 </div>
 </div>
 </div>
-</form>
+{{ Form::close() }}
 <!-- End Modal -->
 <script src="{{asset('js/jquery-2.1.4.js')}}"></script>
 <script src="{{asset('js/functions.js')}}"></script>
