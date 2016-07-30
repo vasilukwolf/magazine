@@ -20,5 +20,6 @@ class ParametersController extends Controller
 
 	$param=Parameters::create($request->all());
 	return [$param->id,$param->title];
+	
 	}
 }

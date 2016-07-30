@@ -6,6 +6,7 @@
 <meta name="csrf-token" id="csrf-token" content="{{csrf_token()}}">
 </head>
 <body>
+<?php echo $_SERVER['DOCUMENT_ROOT'] ?>
 <form>
 <div class="container">
 <h1>Добавить товар</h1>
