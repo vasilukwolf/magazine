@@ -60,11 +60,6 @@ $.ajax({
   });
 });
 
-/*$('.add_images').click(function()
-{
-  $(".multiimage").first().clone().appendTo(".containermultiimage");
-})*/
-
 $('.add_images').click(function()
 {
 all=$('input[name="preview[]"]');
