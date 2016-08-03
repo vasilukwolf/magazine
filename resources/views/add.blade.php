@@ -3,7 +3,6 @@
 <head>
 <title>Добавить товар</title>
 <link rel="stylesheet" href="{{asset("css/bootstrap.min.css")}}"/>
-<meta name="csrf-token" id="csrf-token" content="{{csrf_token()}}">
 </head>
 <body>
 <div class="container">

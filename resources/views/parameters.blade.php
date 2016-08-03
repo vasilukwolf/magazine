@@ -12,6 +12,7 @@
 @foreach($parameters as $parameter)
 <option value="{{$parameter->id}}">{{$parameter->title}} ({{$parameter->unit}})</option>
 @endforeach
+{}
 </select>
 </div>
 <div class="form-group">
