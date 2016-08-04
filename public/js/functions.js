@@ -59,3 +59,8 @@ $.ajax({
      }
   });
 });
+
+$('.add_images').click(function()
+{
+  $(".multiimage").first().clone().appendTo(".containermultiimage");
+})

@@ -19,6 +19,6 @@ Route::post('get_parameters','ParametersController@get');
 Route::post('save_parameters','ParametersController@save');
 
 Route::get('additem','ItemsController@add');
-//Route::post('additem','ItemsController@save');
+Route::post('additem','ItemsController@save');
 
 

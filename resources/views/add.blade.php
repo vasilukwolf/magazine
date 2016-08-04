@@ -6,21 +6,17 @@
 </head>
 <body>
 <div class="container">
-{!!Form::open(array('url' => 'additem')) !!}
+{{!! Form::open(array('url'=>'additem','method'=>'POST', 'files'=>true)) !!}
 <h1>Добавить товар</h1>
 <hr>
 <div class="row">
 <div class="col-md-4">
 <hr>
-<h3>Дополнительные изображения</h3>
-<button class="add_images btn btn-primary" type="button"><i class="glyphicon glyphicon-plus"></i></button>
-<div class = "containermultiimage">
-
-</div>
+{!! Form::file('image') !!}
 <hr>
-<input type="file" name="preview[]" class="multiimage"/><br>
 </div>
 <div class="col-md-8">
+<hr>
 <i class="glyphicon glyphicon-arrow-left"></i> Выберите миниатюру для товара. <p class="help-block">Размер изображения 150x150px, не более 200Кб</p>
 </div>
 </div>
