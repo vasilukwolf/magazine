@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="container">
-{{!! Form::open(array('url'=>'additem','method'=>'POST', 'files'=>true)) !!}
+{!! Form::open(array('url'=>'additem','method'=>'POST', 'files'=>true)) !!}
 <h1>Добавить товар</h1>
 <hr>
 <div class="row">
